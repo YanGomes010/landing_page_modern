@@ -4,11 +4,14 @@ let section_02 = document.querySelector("#section_second_02");
 let section_03 = document.querySelector("#section_second_03");
 let section_04 = document.querySelector("#section_second_04");
 let section_05 = document.querySelector("#section_second_05");
+let section_06 = document.querySelector("#section_second_06");
+let contact = document.querySelector("#contact");
+let about = document.querySelector("#about");
 
 window.addEventListener("DOMContentLoaded", () => {
   header.innerHTML = `
-    <img src="./images/logo.png"/>
-    <img src="./images/Sort.png"/>
+    <img id="logo" src="./images/logo.png"/>
+    <img id="menu" src="./images/Sort.png"/>
 `;
 
   section_01.innerHTML = `
@@ -40,13 +43,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   section_04.innerHTML = `
 
-<h1 id="title_section_04" class="title_message"><img class="play_title" src="./images/play.png"/>The Service We Provide For You   <img id="mais_section_04" src="./images/mais.png"/></h1>`;
+<h1 id="title_section_04" class="title_message "><img class="play_title" src="./images/play.png"/>The Service We Provide For You   <img id="mais_section_04" src="./images/mais.png"/></h1>`;
 
   section_05.innerHTML = `
 
                 <div class="card">
                   <div>
-                       <img src="./images/Icon_01.png"/>
+                       <img src="./images/icon_01.png"/>
                    </div>
                     <h3>Development</h3>
                     <p class="paragraph_card">Create a platform with the best and coolest quality from us.</p>
@@ -91,5 +94,37 @@ window.addEventListener("DOMContentLoaded", () => {
                     <h3>Videography</h3>
                     <p class="paragraph_card">Create a platform with the best and coolest quality from us.</p>
                 </div>
+                <img id="mais_section_05" src="./images/mais.png"/>
+`;
+
+  section_06.innerHTML = `
+<h1 id="title_section_06" class="title_message">Our Awesome Portofolio  <img id="circulos_section_06" src="./images/circulos.png"/></h1>
+<section id="container_carrosel">
+<div id="carrosel">
+<img id="carrosel_item_01" class="carrosel_item" src="./images/image_carrosel_01.png"/>
+<img id="carrosel_item_02" class="carrosel_item" src="./images/image_carrosel_02.png"/>
+<img id="carrosel_item_03" class="carrosel_item" src="./images/image_carrosel_03.png"/>
+</div>
+<img id="onda_carrosel" src="./images/onda.png"/>
+</section>
+
+
+
+`;
+
+  contact.innerHTML = `<img id="mais_footer" src="./images/mais.png"/><h1 id="title_footer">Contact us for the service you want to use</h1> <img id="circulos_footer" src="./images/circulos.png"/>
+
+<button id="button_footer">Contact us</button>
+`;
+
+  about.innerHTML = `
+
+<img src="./images/logo.png"/>
+ <ul>
+  <li>Support</li>
+  <li>Privacy Policy</li>
+  <li>Terms and Conditions</li>
+</ul>
+<span>© 2020 Enver, All Rights Reserved</span>
 `;
 });
