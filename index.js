@@ -10,8 +10,19 @@ let about = document.querySelector("#about");
 
 window.addEventListener("DOMContentLoaded", () => {
   header.innerHTML = `
+  <div id="header_mobile">
     <img id="logo" src="./images/logo.png"/>
     <img id="menu" src="./images/Sort.png"/>
+    </div>
+    <div id="header_desktop">
+    <img src="./images/logo.png" alt="">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Our Project</li>
+            <li>About us</li>
+        </ul>
+        <button id="btn_header">Contact us</button></div>
 `;
 
   section_01.innerHTML = `
